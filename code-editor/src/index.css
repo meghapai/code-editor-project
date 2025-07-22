@@ -1,0 +1,52 @@
+.react-codemirror2 > .CodeMirror:first-child { display: none; }
+
+body{
+    margin: 0;
+}
+
+.top-pane{
+    /* background-color: #6F8FAF */
+    /* background-color: #4e4b48; */
+    background-color: #000080
+}
+
+.pane{
+    height: "50%";
+    display: flex;
+}
+
+.editor-container{
+    flex-grow: 1;
+    flex-basis: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+}
+
+.editor-title{
+    display: flex;
+    justify-content: space-between;
+    background-color: #36454f;
+    color: white;
+    padding: 0.5rem 1rem;
+}
+
+.code-mirror-wrapper{
+  flex-grow:  1;
+}
+
+.editor-container.collapsed{
+    flex-grow: 0;
+}
+
+.editor-container.collapsed.CodeMirror-scroll{
+   position: absolute;
+}
+
+.expand-collapse-btn{
+    margin-left: 0.5rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
